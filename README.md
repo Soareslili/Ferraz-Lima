@@ -71,10 +71,7 @@ O projeto já vem configurado com regras básicas do ESLint para garantir a padr
 
 Para realizar o deploy, basta rodar o comando de build e subir o conteúdo da pasta `dist` para o serviço de hospedagem de sua preferência.
 
-## Contato
-
-Para dúvidas ou sugestões, entre em contato pelo e-mail: [contato@ferrazlima.adv.br](mailto:contato@ferrazlima.adv.br)
 
 ---
 
-> Desenvolvido com dedicação por Ferraz Lima Advogados Associados.
+> Desenvolvido com dedicação por Lidiane Soares.
