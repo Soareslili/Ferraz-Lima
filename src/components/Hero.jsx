@@ -32,7 +32,7 @@ export function Hero() {
 
     return (
         <>
-            <header className={` h-full px-4 py-5 transition-colors duration-300 flex justify-center ${scrolled ? "bg-white shadow" : "bg-black/89 text-white"}`}>
+            <header className={`fixed top-0 left-0 w-full h-auto px-4 py-5 transition-colors duration-300 flex justify-center z-50 ${scrolled ? "bg-white shadow" : "bg-black/89 text-white"}`}>
                 <div className="flex items-center justify-center gap-30 w-full max-w-7xl">
                     <div className='flex items-center space-x-2'>
                         <div className={`w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center`}>
@@ -44,7 +44,7 @@ export function Hero() {
                         </div>
                     </div>
 
-                    <nav className="hidden lg:flex items-center space-x-8 cursor-pointer">
+                    <nav className="hidden lg:flex items-center space-x-8 cursor-pointer ml-14">
 
                         <a className={`font-medium transition-colors duration-300 hover:text-blue-900 ${scrolled ? "text-black" : ""}`}>Sobre</a>
                         <a className={`font-medium transition-colors duration-300 hover:text-blue-900 ${scrolled ? "text-black" : ""}`}>Áreas de Atuação</a>
@@ -57,7 +57,7 @@ export function Hero() {
             </header>
 
             <main
-                className="w-full h-full mx-auto px-4 py-39 flex flex-col items-center justify-center"
+                className="w-full h-full mx-auto px-4 py-45 flex flex-col items-center justify-center"
                 style={{
                     backgroundImage: `url(${BG})`,
                     backgroundSize: "cover",
