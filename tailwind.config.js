@@ -6,7 +6,9 @@ export default {
       fontFamily: {
         playfair: ['"Playfair Display"', 'serif'],
       },
+      
+      
     },
-  },
-  plugins: [],
-};
+    plugins: [],
+  }
+}

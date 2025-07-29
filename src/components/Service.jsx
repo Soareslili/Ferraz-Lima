@@ -1,5 +1,6 @@
 import { InteractiveHoverButton } from './ui/InteractiveHoverButtonProps';
 
+
 import BG from '../assets/Advocacia.png';
 
 export function Service() {
@@ -11,24 +12,24 @@ export function Service() {
                 color: '#1E293B',
             }}
         >
-            {/* Imagem de fundo com transparência */}
+
             <div
                 style={{
                     backgroundImage: `url(${BG})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
-                    opacity: 0.5, // Mais transparente
+                    opacity: 0.5,
                 }}
                 className="absolute inset-0 w-full h-full z-0"
                 aria-hidden="true"
             />
             <div className='container mx-auto px-4 relative z-10'>
-                <div className='mb-20'>
+                <div className='mb-10'>
                     <h2 className="text-4xl font-bold mb-4  text-center">
-                        Area de Atuação
+                        Área de Atuação
                     </h2>
-                    <p className="text-xl text-slate-900 max-w-3xl mx-auto leading-relaxed text-center mb-20">
+                    <p className="text-xl text-slate-900 max-w-3xl mx-auto leading-relaxed text-center mb-16">
                         Oferecemos serviços jurídicos especializados com foco em resultados efetivos e
                         atendimento personalizado para cada área do direito.
                     </p>
@@ -109,7 +110,7 @@ export function Service() {
                                     Consultoria Preventiva
                                 </li>
                             </ul>
-                             <div className="mt-17">
+                            <div className="mt-17">
                                 <InteractiveHoverButton
                                     borderRadius="1.75rem"
                                     className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
@@ -152,7 +153,7 @@ export function Service() {
                                     Assessoria Societária
                                 </li>
                             </ul>
-                             <div className="mt-6">
+                            <div className="mt-6">
                                 <InteractiveHoverButton
                                     borderRadius="1.75rem"
                                     className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
@@ -164,6 +165,13 @@ export function Service() {
 
 
 
+                    </div>
+
+                    <div className=" max-w-3xl h-[250px] ml-60 bg-gradient-to-br from-blue-900 to-blue-700 text-white rounded-2xl shadow-lg hover:shadow-xl transform transition-shadow hover:scale-105 flex flex-col items-center justify-center">
+
+                        <h3 className='text-3xl font-serif font-bold mb-4'>Precisa de Orientção Jurídica?</h3>
+                        <p className='text-xl text-center text-blue-100 mb-6 max-w-2xl mx-auto'>Nossa equipe está pronta para analisar seu caso e oferecer a melhor solução jurídica.</p>
+                        <InteractiveHoverButton className='bg-white text-black border border-none rounded-lg font-semibold text-lg cursor-pointer hover:bg-blue-900 hover:text-white'> Consulta Gratuita</InteractiveHoverButton>
                     </div>
                 </div>
             </div>
