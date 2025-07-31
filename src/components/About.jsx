@@ -7,6 +7,7 @@ export function About() {
                     <h2 className="text-4xl font-bold mb-4  text-center">
                         Sobre o Escritório
                     </h2>
+                     <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 max-auto ml-[45%] mb-10"></div>
                     <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed text-center">
                         Fundado em 2008, o Ferraz & Lima Advogados Associados é reconhecido pela
                         excelência no atendimento e pela eficiência na resolução de questões jurídicas

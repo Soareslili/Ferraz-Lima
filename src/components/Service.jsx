@@ -29,6 +29,8 @@ export function Service() {
                     <h2 className="text-4xl font-bold mb-4  text-center">
                         Área de Atuação
                     </h2>
+                     <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 max-auto ml-[45%] mb-6"></div>
+                    
                     <p className="text-xl text-slate-900 max-w-3xl mx-auto leading-relaxed text-center mb-16">
                         Oferecemos serviços jurídicos especializados com foco em resultados efetivos e
                         atendimento personalizado para cada área do direito.
@@ -41,9 +43,9 @@ export function Service() {
                                 <img src='https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/external-home-contact-flatart-icons-outline-flatarticons-1.png' alt='Departamento Civil' />
                             </span>
 
-                            <p className="text-xl font-semibold text-black mb-4 ">Direito Civil</p>
+                            <p className="text-xl font-bold text-black mb-4 ">Direito Civil</p>
 
-                            <p className="text-slate-500 leading-relaxed mb-4">
+                            <p className="text-blue-900 font-semibold leading-relaxed mb-4">
                                 Contratos, responsabilidade civil, direito de família, sucessões, usucapião e questões patrimoniais
                             </p>
 
@@ -84,9 +86,9 @@ export function Service() {
                                 <img src='https://img.icons8.com/parakeet-line/48/group.png' alt='Departamento Trabalhista' />
                             </span>
 
-                            <p className="text-xl font-semibold text-black mb-4 ">Direito Trabalhista</p>
+                            <p className="text-xl font-bold text-black mb-4 ">Direito Trabalhista</p>
 
-                            <p className="text-slate-500 leading-relaxed mb-4">
+                            <p className="text-blue-900 font-semibold leading-relaxed mb-4">
                                 Defesa em processos trabalhistas, rescisões, acordos coletivos e consultoria preventiva.
                             </p>
 
@@ -125,9 +127,9 @@ export function Service() {
                                 <img src='https://img.icons8.com/dotty/80/department.png' alt='Departamento Civil' />
                             </span>
 
-                            <p className="text-xl font-semibold text-black mb-4 ">Direito Empresarial</p>
+                            <p className="text-xl font-bold text-black mb-4 ">Direito Empresarial</p>
 
-                            <p className="text-slate-500 leading-relaxed mb-4">
+                            <p className="text-blue-900 font-semibold  leading-relaxed mb-4">
                                 Constituição de empresas, contratos
                                 comerciais, recuperação judicial e
                                 assessoria societária
