@@ -1,3 +1,6 @@
+import CountUp from 'react-countup';
+
+
 
 export function About() {
     return (
@@ -7,7 +10,7 @@ export function About() {
                     <h2 className="text-4xl font-bold mb-4  text-center">
                         Sobre o Escritório
                     </h2>
-                     <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 max-auto ml-[45%] mb-10"></div>
+                    <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 max-auto ml-[45%] mb-10"></div>
                     <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed text-center">
                         Fundado em 2008, o Ferraz & Lima Advogados Associados é reconhecido pela
                         excelência no atendimento e pela eficiência na resolução de questões jurídicas
@@ -38,22 +41,35 @@ export function About() {
 
                         <div className="bg-gradient-to-br from-blue-900 to-blue-700 rounded-2xl p-8 text-white flex items-center justify-center">
                             <div className="grid grid-cols-2 gap-6 text-center">
+
                                 <div className="flex flex-col items-center">
-                                    <p className="text-4xl font-bold mb-2">15+</p>
+                                    <p className="text-4xl font-bold mb-2">
+                                        <CountUp end={15} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
+                                    </p>
                                     <p className="text-gray-200">Anos de Experiência</p>
                                 </div>
+
                                 <div className="flex flex-col items-center">
-                                    <p className="text-4xl font-bold mb-2">500+</p>
+                                    <p className="text-4xl font-bold mb-2">
+                                        <CountUp end={500} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
+                                    </p>
                                     <p className="text-gray-200">Casos Resolvidos</p>
                                 </div>
+
                                 <div className="flex flex-col items-center">
-                                    <p className="text-4xl font-bold mb-2">98%</p>
+                                    <p className="text-4xl font-bold mb-2">
+                                        <CountUp end={98} duration={2} suffix="%" enableScrollSpy scrollSpyOnce />
+                                    </p>
                                     <p className="text-gray-200">Taxa de Sucesso</p>
                                 </div>
+
                                 <div className="flex flex-col items-center">
-                                    <p className="text-4xl font-bold mb-2">24h</p>
+                                    <p className="text-4xl font-bold mb-2">
+                                        <CountUp end={24} duration={2} suffix="h" enableScrollSpy scrollSpyOnce />
+                                    </p>
                                     <p className="text-gray-200">Resposta Média</p>
                                 </div>
+
                             </div>
                         </div>
                     </div>

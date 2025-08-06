@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import CountUp from 'react-countup';
+
 
 import BG from "../assets/hero.png";
 
@@ -92,38 +94,49 @@ export function Hero() {
                         <a className="text-white cursor-pointer border bg-gray-300/30 border-gray-700 px-4 py-4 rounded-lg transform duration-300 hover:scale-105 text-center">Conheça Nossos Serviços</a>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-8 mt-10 text-white justify-center items-center"
-                    
-                        
-                    >
-                        <div className="flex flex-col items-center"
+                    <div className="flex flex-col sm:flex-row gap-8 mt-10 text-white justify-center items-center">
+
+                        {/* Anos de Experiência */}
+                        <div
+                            className="flex flex-col items-center"
                             data-aos="fade-up"
                             data-aos-delay="800"
-                            duration="1500"
+                            duration="1600"
                         >
-
-                            <p className="text-3xl font-bold text-blue-300">15+</p>
+                            <p className="text-3xl font-bold text-blue-300">
+                                <CountUp end={15} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
+                            </p>
                             <p className="text-blue-100">Anos de Experiência</p>
                         </div>
 
-                        <div className="flex flex-col items-center"
+                        {/* Casos Resolvidos */}
+                        <div
+                            className="flex flex-col items-center"
                             data-aos="fade-up"
                             data-aos-delay="900"
-                            duration="1600"
+                            duration="1800"
                         >
-                            <p className="text-3xl font-bold text-blue-300">500+</p>
+                            <p className="text-3xl font-bold text-blue-300">
+                                <CountUp end={500} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
+                            </p>
                             <p className="text-blue-100">Casos Resolvidos</p>
                         </div>
 
-                        <div className="flex flex-col items-center"
+                        {/* Taxa de Sucesso */}
+                        <div
+                            className="flex flex-col items-center"
                             data-aos="fade-up"
                             data-aos-delay="1000"
-                            duration="1700">
-
-                            <p className="text-3xl font-bold text-blue-300">98%</p>
+                            duration="1900"
+                        >
+                            <p className="text-3xl font-bold text-blue-300">
+                                <CountUp end={98} duration={2} suffix="%" enableScrollSpy scrollSpyOnce />
+                            </p>
                             <p className="text-blue-100">Taxa Sucesso</p>
                         </div>
+
                     </div>
+
                 </div>
             </main>
         </>

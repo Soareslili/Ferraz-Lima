@@ -1,5 +1,7 @@
 "use client";
 
+import CountUp from 'react-countup';
+
 import CARLOS from '../assets/Testemunha1.avif'
 import FERNANDA from '../assets/Testemunha3.avif'
 import JOÃO from '../assets/Testemunha2.avif'
@@ -56,20 +58,26 @@ export default function Testimonials() {
         </div>
         <AnimatedTestimonials testimonials={testimonials} autoplay />
 
-        <div className='inline-flex items-center space-x-8 bg-white rounded-full px-8 py-4 shadow-lg ml-[27%]'>
+        <div className='inline-flex items-center space-x-8 bg-white rounded-full px-8 py-4 shadow-lg ml-[29%]'>
           <div>
-            <span className='text-2xl font-bold text-blue-900'>98%</span>
+            <span className='text-2xl font-bold text-blue-900'>
+               <CountUp end={15} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
+            </span>
             <p className='text-sm text-slate-600'>Satifação</p>
           </div>
           <div className='w-px h-8 bg-slate-300'></div>
 
           <div>
-            <span className='text-2xl font-bold text-blue-900 text-center ml-10'>500+</span>
+            <span className='text-2xl font-bold text-blue-900 text-center ml-10'>
+                 <CountUp end={500} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
+            </span>
             <p className='text-sm text-slate-600'>Clientes Antendidos</p>
           </div>
                 <div className='w-px h-8 bg-slate-300'></div>
           <div>
-            <span className='text-2xl font-bold text-blue-900 text-center ml-10'>15+</span>
+            <span className='text-2xl font-bold text-blue-900 text-center ml-10'>
+                 <CountUp end={98} duration={2} suffix="%" enableScrollSpy scrollSpyOnce />
+            </span>
             <p className='text-sm text-slate-600'>Anos de Experiência</p>
           </div>
         </div>

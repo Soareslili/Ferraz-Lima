@@ -3,6 +3,10 @@ import Advogado1 from '../assets/Advogado1.png';
 import Advogado2 from '../assets/Advogada2.png';
 import Advogado3 from '../assets/Advogado3.png';
 
+import CountUp from 'react-countup';
+
+
+
 export function Lawyers() {
     return (
         <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
@@ -90,19 +94,27 @@ export function Lawyers() {
                     
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         <div className="flex flex-col items-center">
-                            <p className="text-3xl font-bold text-blue-600 mb-1">15+</p>
+                            <p className="text-3xl font-bold text-blue-600 mb-1">
+                                <CountUp end={15} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
+                            </p>
                             <p className="text-sm text-gray-500">Anos de Experiência</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <p className="text-3xl font-bold text-blue-600 mb-1">500+</p>
+                            <p className="text-3xl font-bold text-blue-600 mb-1">
+                                 <CountUp end={500} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
+                            </p>
                             <p className="text-sm text-gray-500">Casos Resolvidos</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <p className="text-3xl font-bold text-blue-600 mb-1">98%</p>
+                            <p className="text-3xl font-bold text-blue-600 mb-1">
+                                 <CountUp end={98} duration={2} suffix="%" enableScrollSpy scrollSpyOnce />
+                            </p>
                             <p className="text-sm text-gray-500">Taxa de Sucesso</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <p className="text-3xl font-bold text-blue-600 mb-1">24h</p>
+                            <p className="text-3xl font-bold text-blue-600 mb-1">
+                                   <CountUp end={24} duration={2} suffix="h" enableScrollSpy scrollSpyOnce />
+                            </p>
                             <p className="text-sm text-gray-500">Resposta Média</p>
                         </div>
                     </div>
