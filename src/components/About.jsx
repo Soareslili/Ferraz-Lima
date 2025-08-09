@@ -19,13 +19,21 @@ export function About() {
 
                     <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
                         <div className="text-start">
-                            <div className="mb-8">
+                            <div className="mb-8"
+                            data-aos="fade-right"
+                             data-aos-delay="0"
+                             duration="1000"
+                            >
                                 <h3 className="text-3xl font-serif font-bold text-slate-800 mb-6">Nossa Missão</h3>
                                 <p className="text-lg text-slate-600 leading-relaxed">
                                     Oferecer soluções jurídicas inovadoras e eficazes, sempre priorizando os interesses dos nossos clientes e construindo relacionamentos duradouros baseados na confiança e no sucesso mútuo.
                                 </p>
                             </div>
-                            <div>
+                            <div
+                             data-aos="fade-right"
+                             data-aos-delay="200"
+                             duration="1200"
+                            >
                                 <h3 className="text-3xl font-serif font-bold text-slate-800 mb-6">Nossa Visão</h3>
                                 <p className="text-lg text-slate-600 leading-relaxed">
                                     Ser reconhecido como o escritório de advocacia de referência, destacando-se pela qualidade técnica, inovação e comprometimento com a justiça e os direitos dos nossos clientes.
@@ -33,7 +41,11 @@ export function About() {
                             </div>
 
                             <div>
-                                <span className="flex mt-6">
+                                <span className="flex mt-6"
+                                 data-aos="fade-right"
+                             data-aos-delay="400"
+                             duration="1400"
+                                >
                                     ✅ <p className="text-slate-700 font-medium ml-2">AOB regularizada desde 2008</p>
                                 </span>
                             </div>
@@ -75,7 +87,12 @@ export function About() {
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform transition-shadow hover:scale-105 flex flex-col">
+                        <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform transition-shadow hover:scale-105 flex flex-col"
+                        
+                            data-aos="zoom-in-up"
+                             data-aos-delay="0"
+                             duration="1000"
+                        >
                             <span className="text-5xl text-blue-600 mb-2 ">
                                 <img src="https://img.icons8.com/ios/50/scales.png" alt="Balanca" />
                             </span>
@@ -85,7 +102,11 @@ export function About() {
                             </p>
                         </div>
 
-                        <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform transition-shadow hover:scale-105 flex flex-col ">
+                        <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform transition-shadow hover:scale-105 flex flex-col "
+                        data-aos="zoom-in-up"
+                             data-aos-delay="200"
+                             duration="1200"
+                        >
                             <span className="text-5xl text-blue-600 mb-2">
                                 <img src="https://img.icons8.com/parakeet-line/48/group.png" alt="Equipe" />
                             </span>
@@ -95,7 +116,11 @@ export function About() {
                             </p>
                         </div>
 
-                        <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform transition-shadow hover:scale-105 flex flex-col ">
+                        <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform transition-shadow hover:scale-105 flex flex-col "
+                        data-aos="zoom-in-up"
+                             data-aos-delay="400"
+                             duration="1400"
+                        >
                             <span className="text-5xl text-blue-600 mb-2">
                                 <img src="https://img.icons8.com/dotty/80/prize.png" alt="Excelencia" />
                             </span>

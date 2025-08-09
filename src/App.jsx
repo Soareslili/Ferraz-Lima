@@ -9,9 +9,22 @@ import { Footer } from "./components/Footer"
 import { FaWhatsapp } from "react-icons/fa";
 
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 
 function App() {
+
+   useEffect(() => {
+    AOS.init({
+      duration: 800, 
+      offset: 100,   
+      once: true,    
+    });
+  }, []);
 
 
   return (
