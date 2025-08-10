@@ -51,36 +51,54 @@ export default function Testimonials() {
     <main>
       <section id="depoimentos" className="bg-[#f9f9f9] text-[#1a1a1a] py-20 px-4 md:px-8 lg:px-12">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">O que dizem nossos clientes</h2>
-          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-           A confiança dos nossos clientes é nosso maior patrimônio. Veja alguns depoimentos sobre nosso trabalho.
+          <h2 className="text-3xl md:text-4xl font-bold mb-4"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            duration="1000"
+            id='Depoimentos'
+          >O que dizem nossos clientes</h2>
+          <p className=" text-base md:text-lg max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            duration="1200"
+          >
+            A confiança dos nossos clientes é nosso maior patrimônio. Veja alguns depoimentos sobre nosso trabalho.
           </p>
         </div>
         <AnimatedTestimonials testimonials={testimonials} autoplay />
 
-        <div className='inline-flex items-center space-x-8 bg-white rounded-full px-8 py-4 shadow-lg ml-[29%]'>
-          <div>
-            <span className='text-2xl font-bold text-blue-900'>
-               <CountUp end={15} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
+        <div className="flex flex-col sm:flex-row items-center sm:space-x-8 bg-white rounded-2xl px-12 sm:px-8 py-4 shadow-lg w-fit mx-auto space-y-4 sm:space-y-0">
+    
+          <div className="flex flex-col items-center">
+            <span className="text-2xl font-bold text-blue-900">
+              <CountUp end={15} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
             </span>
-            <p className='text-sm text-slate-600'>Satifação</p>
+            <p className="text-sm text-slate-600">Satisfação</p>
           </div>
-          <div className='w-px h-8 bg-slate-300'></div>
 
-          <div>
-            <span className='text-2xl font-bold text-blue-900 text-center ml-10'>
-                 <CountUp end={500} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
+       
+          <div className="hidden sm:block w-px h-8 bg-slate-300"></div>
+
+      
+          <div className="flex flex-col items-center">
+            <span className="text-2xl font-bold text-blue-900">
+              <CountUp end={500} duration={2} suffix="+" enableScrollSpy scrollSpyOnce />
             </span>
-            <p className='text-sm text-slate-600'>Clientes Antendidos</p>
+            <p className="text-sm text-slate-600">Clientes Atendidos</p>
           </div>
-                <div className='w-px h-8 bg-slate-300'></div>
-          <div>
-            <span className='text-2xl font-bold text-blue-900 text-center ml-10'>
-                 <CountUp end={98} duration={2} suffix="%" enableScrollSpy scrollSpyOnce />
+
+         
+          <div className="hidden sm:block w-px h-8 bg-slate-300"></div>
+
+        
+          <div className="flex flex-col items-center">
+            <span className="text-2xl font-bold text-blue-900">
+              <CountUp end={98} duration={2} suffix="%" enableScrollSpy scrollSpyOnce />
             </span>
-            <p className='text-sm text-slate-600'>Anos de Experiência</p>
+            <p className="text-sm text-slate-600">Anos de Experiência</p>
           </div>
         </div>
+
       </section>
     </main>
   );
