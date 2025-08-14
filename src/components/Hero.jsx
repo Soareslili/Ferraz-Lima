@@ -41,33 +41,22 @@ export function Hero() {
                     }`}
             >
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-                  
-                    <div className="flex items-center space-x-2">
+
+                    <a
+                        href="#inicio"
+                        onClick={() => setMenuOpen(false)}
+                        className="flex items-center space-x-2"
+                    >
                         <div className="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center">
-                            <span
-                                className={`font-bold text-lg ${scrolled ? "text-black" : "text-white"
-                                    }`}
-                            >
-                                F&L
-                            </span>
+                            <span className={`font-bold text-lg ${scrolled ? "text-black" : "text-white"}`}>F&L</span>
                         </div>
                         <div className="flex flex-col">
-                            <h1
-                                className={`font-playfair text-xl font-bold ${scrolled ? "text-black" : "text-white"
-                                    }`}
-                            >
-                                Ferraz & Lima
-                            </h1>
-                            <p
-                                className={`text-sm ${scrolled ? "text-gray-700" : "text-gray-300"
-                                    }`}
-                            >
-                                Advogados Associados
-                            </p>
+                            <h1 className={`font-playfair text-xl font-bold ${scrolled ? "text-black" : "text-white"}`}>Ferraz & Lima</h1>
+                            <p className={`text-sm ${scrolled ? "text-gray-700" : "text-gray-300"}`}>Advogados Associados</p>
                         </div>
-                    </div>
+                    </a>
 
-                 
+
                     <nav className="hidden lg:flex items-center space-x-8">
                         {["Sobre", "Áreas de Atuação", "Advogados", "Depoimentos", "Contato"].map(
                             (item, idx) => (
@@ -103,7 +92,7 @@ export function Hero() {
                     </div>
                 </div>
 
-              
+
                 {menuOpen && (
                     <div className="lg:hidden bg-white shadow-md px-6 py-4 space-y-4 z-50 relative">
                         {["Sobre", "Serviços", "Advogados", "Depoimentos", "Contato"].map(
@@ -133,6 +122,7 @@ export function Hero() {
 
 
             <main
+            id="inicio"
                 className="w-full h-full mx-auto px-4 py-45 flex flex-col items-center justify-center"
                 style={{
                     backgroundImage: `url(${BG})`,
@@ -164,13 +154,13 @@ export function Hero() {
                         data-aos-delay="600"
                         duration="1200"
                     >
-                        <a href=" https://api.whatsapp.com/send/?phone=556899998899&text=Olá%20gostaria%20de%20saber%20mais%20sobre%20os%20trabalho&type=phone_number&app_absent=0" className=" text-white cursor-pointer border bg-gray-300/30 border-gray-700 px-4 py-4 rounded-lg transform duration-300 hover:scale-105 text-center">Agende um Consultoria</a>
+                        <a href=" https://api.whatsapp.com/send/?phone=556899998899&text=Olá%20gostaria%20de%20saber%20mais%20sobre%20os%20trabalho&type=phone_number&app_absent=0" className=" text-white cursor-pointer border bg-gray-300/30 border-gray-700 px-4 py-4 rounded-lg transform duration-300 hover:scale-105 text-center">Entre em Contato Conosco</a>
                         <a href="#servicos" className="text-white cursor-pointer border bg-gray-300/30 border-gray-700 px-4 py-4 rounded-lg transform duration-300 hover:scale-105 text-center">Conheça Nossos Serviços</a>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-8 mt-10 text-white justify-center items-center">
 
-                      
+
                         <div
                             className="flex flex-col items-center"
                             data-aos="fade-up"
@@ -183,7 +173,7 @@ export function Hero() {
                             <p className="text-blue-100">Anos de Experiência</p>
                         </div>
 
-                       
+
                         <div
                             className="flex flex-col items-center"
                             data-aos="fade-up"
@@ -196,7 +186,7 @@ export function Hero() {
                             <p className="text-blue-100">Casos Resolvidos</p>
                         </div>
 
-                    
+
                         <div
                             className="flex flex-col items-center"
                             data-aos="fade-up"
