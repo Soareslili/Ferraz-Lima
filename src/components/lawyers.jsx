@@ -9,7 +9,7 @@ import CountUp from 'react-countup';
 
 export function Lawyers() {
     return (
-        <section     id='advogados' className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+        <section id='advogados' className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center"
@@ -18,7 +18,7 @@ export function Lawyers() {
                         duration="1000"
                     
                     >Nossa Equipe</h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 max-auto ml-[38%]"
+                    <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 max-auto ml-[45%]"
                         data-aos="fade-up"
                         data-aos-delay="0"
                         duration="1000"
